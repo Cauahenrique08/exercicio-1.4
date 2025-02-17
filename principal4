@@ -1,0 +1,19 @@
+package view;
+import controller.Exercicio4;
+import javax.swing.*;
+
+public class Ex4viewer {
+
+	public static void main(String[] args) {
+		Exercicio4 ex4 = new Exercicio4(); //chamada para os métodos da classe
+
+		int[] vt = {-3, -5, -4, -1, 6, 11}; //preenchendo o vetor com valores "chumbados"
+		int size = vt.length; //definindo o tamanho do vetor a partir da quantidade de posições
+		int count = 0;
+		
+		int countNegativos = ex4.findNegativos(vt, size, count);
+		
+		JOptionPane.showMessageDialog(null, "o total de valores negativos dentro do vetor é: " + countNegativos);
+	}
+
+}
